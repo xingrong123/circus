@@ -31,6 +31,7 @@ public class Circus {
             if (a.getValue() <= 5) {
                 System.out.println("Ignoring low value item: " + a.getValue());
                 continue;
+<<<<<<< HEAD:src/main/java/circus/Circus.java
             } else {
                 total += a.getValue();
                 System.out.println("Adding item value: " + a.getValue());
@@ -38,7 +39,12 @@ public class Circus {
                 // more
                 // code 
                 // here ...
+=======
+>>>>>>> origin/improved:src/main/java/Circus.java
             }
+
+            total += a.getValue();
+            System.out.println("Adding item value: " + a.getValue());
         }
         return total;
     }

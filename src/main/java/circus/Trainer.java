@@ -18,8 +18,11 @@ public class Trainer {
         Duck d2 = (Duck) a; // downcasting
         train(new Duck());
         // train(new circus.animal.Parrot());
+<<<<<<< HEAD:src/main/java/circus/Trainer.java
 //        circus.animal.Animal a2 = new circus.animal.Animal();
 //        circus.animal.Bird b2 = new circus.animal.Bird();
+=======
+>>>>>>> origin/improved:src/main/java/Trainer.java
     }
 
     private static void getToSpeak(Animal animal) {
@@ -27,7 +30,9 @@ public class Trainer {
     }
 
     private static void train(Bird bird) {
-        Duck d = (Duck) bird;
-        d.swim();
+        if (bird instanceof Duck) {
+            Duck d = (Duck) bird;
+            d.swim();
+        }
     }
 }
